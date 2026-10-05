@@ -1,0 +1,56 @@
+# .gitignore for Smart Parking Management System
+
+# Build directories
+build/
+cmake-build-*/
+.cmake/
+
+# Compiled binaries
+spms
+test_parking_lot
+test_billing
+test_sensor
+
+# Kernel module build artifacts
+driver/*.o
+driver/*.ko
+driver/*.mod
+driver/*.mod.c
+driver/*.mod.o
+driver/.*.cmd
+driver/Module.symvers
+driver/modules.order
+driver/.tmp_versions/
+
+# CMake artifacts
+CMakeCache.txt
+CMakeFiles/
+CTestTestfile.cmake
+Makefile
+cmake_install.cmake
+install_manifest.txt
+
+# Log files
+*.log
+/tmp/spms_pipe
+
+# IDE / Editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# Object and dependency files
+*.o
+*.d
+*.a
+*.so
+
+# Address Sanitizer output
+*.asan
+
+# Temporary files
+*.tmp
+*.bak
